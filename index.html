@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>铜阳自动化设备有限公司</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	
+<!--头部导航-->
+<header id="header">
+	<div class="smlogo xs-hidden">
+		<img src="img/smlogo.jpg" alt="">
+	</div>
+	<div class="center">
+		<h1 class="logo">
+			
+		</h1>
+		
+		<nav class="link">
+			<ul>
+				<li class="active"><a href="index.html">首页</a></li>
+				<li><a href="information.html"><span class="xs-hidden">公司</span>介绍</a></li>
+				<li><a href="ticket.html">服务<span class="xs-hidden">特色</span></a></li>
+				<li class="xs-hidden"><a href="scenery.html">相关信息</a></li>
+				<li><a href="about.html"><span class="xs-hidden">案例</span>展示</a></li>
+				<li><a href="about.html"><span class="xs-hidden">联系</span>我们</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<!--banner-->
+<div id="adver">
+	<img src="img/adver.jpg" alt="">
+</div>
+<!-- main -->
+ <!-- 中间瀑布流分开 -->
+ <div class="main">
+ 	<div class="col-md-4 left">
+		<div class="contact">&nbsp;&nbsp;联系人信息</div>
+	</div>
+	<div class="col-md-8 right">
+		<div class="introduction">&nbsp;&nbsp;公司介绍</div>
+	</div>
+</div>
+
+<!--页脚-->
+<footer id="footer">
+	<!--屏幕缩小到一定的屏幕，隐藏-->
+	<div class="top sm-hidden">
+		<div class="block left">
+			<h2>合作伙伴</h2>
+			<hr>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="block center">
+			<h2>相关信息</h2>
+			<hr>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="block right">
+			<h2>联系方式</h2>
+			<hr>
+			<ul>
+				<li>微博：weibo.com</li>
+				<li>邮件：</li>
+				<li>地址：</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	
+	<div class="version sm-visible">
+		客户端 | 触屏版 | 电脑版
+	</div>
+	
+	<div class="bottom">
+		Copyright © TongYang 铜阳自动化 | 苏ICP备xxxx号<span class="sm-hidden"> | 经营许可证：</span>
+	</div>
+	
+</footer>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script>
+	$(function(){
+		$('figure img').hover(function () {
+		  	$(this).siblings().find('.type').stop(true,true).animate({"left":0},300);
+		},function (){
+			$(this).siblings().find('.type').stop(true,true).animate({"left":-90},300);
+		});
+	})
+</script>
+</body>
+</html>
